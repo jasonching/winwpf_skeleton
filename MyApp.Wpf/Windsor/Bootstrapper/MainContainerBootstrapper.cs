@@ -28,9 +28,8 @@ namespace MyApp.Wpf.Windsor.Bootstrapper
                 .Where(x => x.Name.EndsWith(ViewModelConvention) && x.Name != "GameControlPanelViewModel"));
 
             container.Register(Component.For<GameControlPanelViewModel>()
-                .PublishEvent(g => g.StartEvent += null, x => x.To<GameBoardViewModel>(l => l.Start(null, null)))
                 .PublishEvent(g => g.ResetEvent += null, x => x.To<GameBoardViewModel>(l => l.Reset(null, System.Drawing.Size.Empty)))
-                .PublishEvent(g => g.StopEvent += null, x => x.To<GameBoardViewModel>(l => l.Stop(null, null))));
+                .PublishEvent(g => g.GenerateEvent += null, x => x.To<GameBoardViewModel>(l => l.Generate(null, null))));
         }
     }
 }

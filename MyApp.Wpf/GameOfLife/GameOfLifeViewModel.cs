@@ -8,5 +8,11 @@ namespace MyApp.Wpf.GameOfLife
     {
         public GameBoardViewModel GameBoard { get; set; }
         public GameControlPanelViewModel GameControlPanel { get; set; }
+
+        protected override void OnDeactivate(bool close)
+        {
+            if (close)
+                GameControlPanel.Deactivated();
+        }
     }
 }

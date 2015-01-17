@@ -89,7 +89,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="GameOfLife\Converter\UnitBackgroundConverter.cs" />
+    <Compile Include="GameOfLife\Converter\BitmapConverter.cs" />
+    <Compile Include="GameOfLife\GameBoard\GameBoard.cs" />
     <Compile Include="GameOfLife\GameBoard\GameBoardView.xaml.cs">
       <DependentUpon>GameBoardView.xaml</DependentUpon>
     </Compile>
@@ -103,8 +104,8 @@
     <Compile Include="Windsor\Bootstrapper\UiContainerBootstrapper.cs" />
     <Compile Include="Windsor\GlobalContainerAccessor.cs" />
     <Page Include="GameOfLife\GameBoard\GameBoardView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="GameOfLife\GameControlPanel\GameControlPanelView.xaml">
       <SubType>Designer</SubType>
