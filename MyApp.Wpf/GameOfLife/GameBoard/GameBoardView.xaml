@@ -21,14 +21,6 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Canvas Background="{Binding IsAlive, Converter={StaticResource unitBackgroundConverter}}"
-                            Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}, Path=DataContext.UnitWidth}"
-                          Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}, Path=DataContext.UnitHeight}"
-                        />
-                    <!--                  Background="{Binding IsAlive, Converter={StaticResource unitBackgroundConverter}}"
-                    Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}, Path=DataContext.UnitWidth}"
-                          Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}, Path=DataContext.UnitHeight}" -->
-
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl> 
