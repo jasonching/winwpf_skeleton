@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="MyApp.Wpf.GameOfLife.GameControlPanel.GameControlPanelView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="60" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="30" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Width: " />
+                <TextBox x:Name="WidthCount" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Height: " />
+                <TextBox x:Name="HeightCount" />
+            </StackPanel>
+            <Button x:Name="Start" Content="Start" />
+            <Button x:Name="Reset" Content="Reset" />
+            <Button x:Name="Stop" Content="Stop" />
+        </StackPanel>
+        
+    </Grid>
+</UserControl>
