@@ -100,7 +100,6 @@
       <DependentUpon>GameControlPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="GameOfLife\GameControlPanel\GameControlPanelViewModel.cs" />
-    <Compile Include="GameOfLife\Observer\SizeObserver.cs" />
     <Compile Include="Windsor\Bootstrapper\UiContainerBootstrapper.cs" />
     <Compile Include="Windsor\GlobalContainerAccessor.cs" />
     <Page Include="GameOfLife\GameBoard\GameBoardView.xaml">
